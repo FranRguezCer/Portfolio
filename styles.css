@@ -2,12 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #f5f5dc; /* Fondo beige claro */
+    color: #000; /* Texto en negro */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #d2b48c; /* Marrón claro para el encabezado */
+    color: #000;
     text-align: center;
     padding: 20px 0;
 }
@@ -18,7 +19,7 @@ main {
 }
 
 .project {
-    background-color: #fff;
+    background-color: #fff; /* Fondo blanco para cada proyecto */
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
@@ -32,7 +33,7 @@ main {
     display: block;
     margin-top: 10px;
     text-decoration: none;
-    color: #333;
+    color: #000; /* Color del texto del enlace */
     font-weight: bold;
 }
 
@@ -41,8 +42,8 @@ main {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #d2b48c; /* Marrón claro para el pie de página */
+    color: #000;
     text-align: center;
     padding: 10px 0;
     position: fixed;
