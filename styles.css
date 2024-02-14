@@ -1,52 +1,79 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f5f5dc; /* Fondo beige claro */
-    color: #000; /* Texto en negro */
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #d2b48c; /* Marrón claro para el encabezado */
-    color: #000;
-    text-align: center;
-    padding: 20px 0;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Tipografía de palo seco */
+    background-color: #f0f0f0; /* Color de fondo gris claro */
+    color: #333; /* Color de texto gris oscuro */
 }
 
-main {
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-.project {
-    background-color: #fff; /* Fondo blanco para cada proyecto */
-    border-radius: 5px;
+.container {
+    max-width: 960px;
+    margin: 0 auto;
     padding: 20px;
-    margin-bottom: 20px;
 }
 
-.project h2 {
-    margin-top: 0;
+/* Estilos para encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+    color: #000; /* Color de texto negro */
 }
 
-.project a {
-    display: block;
-    margin-top: 10px;
+/* Estilos para enlaces */
+a {
+    color: #555; /* Color de enlaces gris oscuro */
     text-decoration: none;
-    color: #000; /* Color del texto del enlace */
-    font-weight: bold;
 }
 
-.project a:hover {
-    text-decoration: underline;
+a:hover {
+    color: #777; /* Color de enlaces gris un poco más claro al pasar el ratón */
 }
 
-footer {
-    background-color: #d2b48c; /* Marrón claro para el pie de página */
-    color: #000;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+/* Estilos para botones */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000; /* Color de fondo negro */
+    color: #fff; /* Color de texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #333; /* Color de fondo gris oscuro al pasar el ratón */
+}
+
+/* Estilos para elementos de formulario */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
     width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+/* Estilos para botones de formulario */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000; /* Color de fondo negro */
+    color: #fff; /* Color de texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #333; /* Color de fondo gris oscuro al pasar el ratón */
 }
