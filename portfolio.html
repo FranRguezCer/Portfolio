@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="shortcut icon" type="image/ico" href="../assets/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/minibar.virtual.css">
+</head>
+<body class="theme-blue">
+
+  <!-- Back to top button -->
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
+
+  <!-- Back to top button -->
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
+  
+  <!-- Mini bar -->
+  <div class="minibar">
+    <div class="header">
+      <div class="brand"></div>
+    </div>
+    <div class="content">
+      <ul class="main-menu">
+        <li class="menu-item active">
+          <a href="index.html" class="menu-link">
+            <span class="icon ti-arrow-left"></span>
+            <span class="caption">Atrás</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+<!-- Filtro desplegable -->
+<div class="vg-main-wrapper">
+  <div class="vg-page page-blog">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <div class="d-flex py-4 justify-content-center">
+            <div class="input-group">
+              <select id="categoryFilter" class="vg-select">
+                <option value="all">Todas las categorías</option>
+                <option value="R">R</option>
+                <option value="Python">Python</option>
+                <option value="ArcGIS">ArcGIS</option>
+                <option value="PowerBI">PowerBI</option>
+                <option value="Tableau">Tableau</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="postContainer">
+        
+        <!-- Aquí empiezan las tarjetas -->
+        <div class="col-md-6 col-lg-4">
+          <a href="../assets/img/work/diabetes.pdf" target="_blank" class="card">
+            <div class="img-place">
+              <img src="../assets/img/work/diabetes.jpg" alt="Diabetes Predictive Model Image">
+            </div>
+            <div class="caption">
+              <span class="post-category">R</span>
+              <span class="post-title">Modelos predictivos para la diabetes.</span>
+              <span class="post-date">Tras razonar la relación entre distintas variables, procedemos a la aplicación y evaluación de distintos modelos supervisados y no supervisados para predecir si los pacientes de un conjunto de datos tienen diabetes o no.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiM2JkMzc1NDktNjcyNS00MjQ4LThiOWYtMDY3NDg1NjllMTYxIiwidCI6IjI5OWRhYzFiLWVkZWEtNDI4OS1iZTMxLTAxMTg4ZWI3ZjljNSIsImMiOjl9&pageName=ReportSection794430081eb310ad0a1a" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/dashboardresiduos.JPG" alt="Dashboard estadístico de gestión de residuos (PowerBI)">
+            </div>
+            <div class="caption">
+              <span class="post-category">PowerBI</span>
+              <span class="post-title">Dashboard estadístico de gestión de residuos.</span>
+              <span class="post-date">Este dashboard desarrollado en PowerBI permite analizar los datos de gestión de residuos, ofreciendo visualizaciones interactivas que facilitan la toma de decisiones en la administración de residuos.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="assets/img/work/ifood.html" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/ifood.JPG" alt="Marketing: Estudio estadístico (R)">
+            </div>
+            <div class="caption">
+              <span class="post-category">R</span>
+              <span class="post-title">Marketing: Estudio estadístico.</span>
+              <span class="post-date">Análisis de datos y aplicación de técnicas estadísticas avanzadas para optimizar estrategias de marketing en la plataforma (ficticia) iFood utilizando R. Los datos con los que trabajos corresponden a un conjunto de ciudadanos y en él se nos indican el año de nacimiento, nivel educativo y su respuesta frente a campañas de marketing previas así como sus hábitos de compra según la tipología de productos y cantidad de los mismos que compra.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="https://lapalma.maps.arcgis.com/apps/dashboards/c5d6c0b92c174418b7e2c7bb0bdc9430" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/dashboardconteo.JPG" alt="Dashboard en tiempo real de conteo de personas y vehículos (ArcGIS online)">
+            </div>
+            <div class="caption">
+              <span class="post-category">ArcGIS</span>
+              <span class="post-title">Dashboard en tiempo real de conteo de personas y vehículos.</span>
+              <span class="post-date">Este dashboard en ArcGIS Online ofrece un seguimiento en tiempo real de los movimientos de personas y vehículos en distintas áreas, ideal para gestión urbana y eventos. Los datos son recogidos por unas cámaras desplegadas en la isla bajo el proyecto La Palma Smart Island y los obtenemos a través de una API bajo un notebook automatizado de Python en la plataforma de ArcGIS online que luego son volcados en una capa que se actualiza periodicamente y desde la cual generamos el dashboard. (PUEDE NO SER VISIBLE SI EN EL MOMENTO NO ESTÁ COMO RECURSO PÚBLICO DE LA ADMINISTRACIÓN LOCAL).</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiZTJkZmZjY2EtZTdkNi00Y2YzLWI4MjYtZDJkOGFkNmNjOGU1IiwidCI6IjI5OWRhYzFiLWVkZWEtNDI4OS1iZTMxLTAxMTg4ZWI3ZjljNSIsImMiOjl9" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/dashboardCO2.JPG" alt="Dashboard de niveles de CO2 en la zona afecta por el volcán de La Palma de 2021 (PowerBI)">
+            </div>
+            <div class="caption">
+              <span class="post-category">PowerBI</span>
+              <span class="post-title">Dashboard de niveles de CO2 en La Palma (2021).</span>
+              <span class="post-date">Monitoreo de los niveles de CO2 en las zonas afectadas por la erupción volcánica de La Palma en 2021, utilizando visualizaciones interactivas en PowerBI. Este dashboard ayuda en la toma de decisiones sobre que secciones de la población afectada se puede habilitar la vuelta de sus residentes o no según los niveles de CO2 en ppm (partes por millón) registrada por una serie de balizas desplegadas bajo el proyecto La Palma Smart Island.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="assets/img/work/Clustering%20python.pdf" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/cluster.JPG" alt="Modelos de clustering de datos (Python)">
+            </div>
+            <div class="caption">
+              <span class="post-category">Python</span>
+              <span class="post-title">Modelos de clustering de datos.</span>
+              <span class="post-date">Implementación y evaluación de modelos de clustering para segmentación de datos, utilizando bibliotecas de Python y datos sintéticos (simulados de manera aleatoría por nosotros mismos).</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="assets/img/work/Combinaci%C3%B3n%20de%20modelos%20de%20regresi%C3%B3n.pdf" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/combinacion.JPG" alt="Combinación y evaluación de diferentes modelos de regresión (Python)">
+            </div>
+            <div class="caption">
+              <span class="post-category">Python</span>
+              <span class="post-title">Combinación y evaluación de modelos de regresión.</span>
+              <span class="post-date">Estudio comparativo y combinación de diferentes técnicas de regresión para mejorar la precisión de los modelos predictivos en Python. En este caso partimos de un dataset de pacientes que han sufrido un infarto de miocardio y comparamos la precisión obtenida tras aplicar diferentes métodos (y combinación de ellos) clasificadores.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="assets/img/work/Exploraci%C3%B3n%20y%20preprocesado%20de%20un%20conjunto%20de%20datos.pdf" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/EDA.JPG" alt="EDA y preprocesado de un conjunto de datos de incendios forestales (Python)">
+            </div>
+            <div class="caption">
+              <span class="post-category">Python</span>
+              <span class="post-title">EDA y preprocesado de un conjunto de datos de incendios forestales.</span>
+              <span class="post-date">Exploración de datos y preprocesamiento para el análisis predictivo de incendios forestales, utilizando Python. En este proyecto tras hacer un preprocesado y limpieza de datos, determinamos a través de una matriz de correlaciones aquellas variables más influyentes a la hora de que se produzca un incendio y en función de esos resultados llevamos a cabo una reducción de dimensionalidad del problema para posteriormente analizar la variabilidad del target (área de la superficie quemada en el incendio).</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiYzEyNTBiNzMtODlkNC00NzExLTg3NzgtNmQzYjk5N2FhYTI4IiwidCI6IjI5OWRhYzFiLWVkZWEtNDI4OS1iZTMxLTAxMTg4ZWI3ZjljNSIsImMiOjl9" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/dashboardrpt.JPG" alt="Dashboard de la RPT de 2023 del cabildo de La Palma (PowerBI)">
+            </div>
+            <div class="caption">
+              <span class="post-category">PowerBI</span>
+              <span class="post-title">Dashboard de la RPT de 2023 del cabildo de La Palma.</span>
+              <span class="post-date">Visualización interactiva de la Relación de Puestos de Trabajo (RPT) del Cabildo de La Palma para la plantilla del año 2023. En este dashboard podemos relativizar de manera visual la cantidad de personal destinada a diferentes secciones de la administración pública local en función de su nivel de estudios o grupos retributibos.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="https://public.tableau.com/app/profile/francisco.rodr.guez8778/viz/covidvacctracker_17188864386690/CovidVaccineTracker?publish=yes" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/covid%20vacc%20tracker.JPG" alt="Dashboard seguimiento vacunación COVID-19 (Tableau)">
+            </div>
+            <div class="caption">
+              <span class="post-category">Tableau</span>
+              <span class="post-title">Dashboard seguimiento vacunación COVID-19.</span>
+              <span class="post-date">Seguimiento del proceso de vacunación contra el COVID-19, con visualizaciones interactivas en Tableau. Hacemos un seguimiento del porcentaje de la población sin vacunar, con una dosis o ambas dosis de la vacuna en función del país y también realizamos una comparativa entre países, los vacunados y el PIB del mismo.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="https://lapalma.maps.arcgis.com/apps/dashboards/c733b299507a4ef49a8411b36e292e91" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/fotometria.JPG" alt="Dashboard e interpolación de datos de fotometría en tiempo real (ArcGIS online)">
+            </div>
+            <div class="caption">
+              <span class="post-category">ArcGIS</span>
+              <span class="post-title">Dashboard e interpolación de datos de fotometría en tiempo real.</span>
+              <span class="post-date">>Dashboard de fotometría en tiempo real, con interpolación de datos de luminosdad del cielo nocturno medido por una red de fotómetros desplegados en la isla de La Palma bajo el proyecto La Palma Smart Island. Este dashboard así como los notebooks de Python automatizados para actualizar los datos a través de diferentes APIS en la plataforma de ArcGIS Online. (PUEDE NO SER VISIBLE SI EN EL MOMENTO NO ESTÁ COMO RECURSO PÚBLICO DE LA ADMINISTRACIÓN LOCAL).</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="assets/img/work/webscrapping.pdf" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/webscrapping.JPG" alt="Web Scrapping (Python)">
+            </div>
+            <div class="caption">
+              <span class="post-category">Python</span>
+              <span class="post-title">Web Scrapping.</span>
+              <span class="post-date">Técnicas de web scraping para extraer datos de sitios web de manera eficiente utilizando Python. En concreto generamos un dataset sobre películas a través de web scrapping al portal web de Filmaffinity (el cual carece de API).</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="assets/img/work/TFG.pdf" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/tfg.JPG" alt="TFG: Characterization of the parameters of an infrared astronomical detector">
+            </div>
+            <div class="caption">
+              <span class="post-category">Otro</span>
+              <span class="post-title">TFG: Characterization of the parameters of an infrared astronomical detector.</span>
+              <span class="post-date">Trabajo de fin de grado realizado bajo la tutorización de Francisco Garzón López, jefe de proyecto EMIR en el GTC del IAC y catedrático de la ULL. En este proyecto analizamos y ajustamos los parámetros intrínsicos del detector para poder tenerlos en cuenta en la corrección de los futuros datos recabados con dicho instrumento. Los análisis se hicieron con numerosos scripts de Python desarrollados para tal fin desde cero y sustentados en la teoría de la astrofísica y el funcionamiento del telescopio y el detector.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="assets/img/work/memoriaPEII.pdf" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/memoriapeii.jpg" alt="Memoria de prácticas externas">
+            </div>
+            <div class="caption">
+              <span class="post-category">Otro</span>
+              <span class="post-title">Memoria de prácticas externas.</span>
+              <span class="post-date">Memoria detallada de las prácticas externas realizadas en el marco del plan de estudios del grado en física que cursé en la ULL. En esta memoria técnica relato mi paso por el centro de apoyo a la investigación de la ULL (SEGAI), en concreto por los servicios de difracción de rayos X y por el servicio de microscopía electrónica.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <a href="https://public.tableau.com/app/profile/francisco.rodr.guez8778/viz/Cncerdemama_17054183268300/Historia1#1" target="_blank" class="card">
+            <div class="img-place">
+              <img src="assets/img/work/cancer.jpg" alt="Dashboard sobre el cáncer de mama (Tableau)">
+            </div>
+            <div class="caption">
+              <span class="post-category">Tableau</span>
+              <span class="post-title">Dashboard sobre el cáncer de mama.</span>
+              <span class="post-date">Visualización interactiva hecha en Tableau sobre la incidencia y tratamiento del cáncer de mama, así como del ratio  de supervivencia en función del grado de la enfermedad, su velocidad de crecimiento y como influye la cantidad de nódulos examinados o el tamaño del tumor.</span>
+            </div>
+          </a>
+        </div>
+        
+
+            
+      
+
+
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function changeLanguage(language) {
+        var newUrl;
+        if (language === 'es') {
+            newUrl = 'portfolio';
+        } else if (language === 'en') {
+            newUrl = 'portfolio_en';
+        }
+        window.location.href = newUrl + '.html'; // Cambiar ".html" según la extensión de tu página
+    }
+  </script>
+  
+  <div class="language-buttons">
+    <a href="#" onclick="changeLanguage('es')">
+      <img src="assets/img/flag_esp.png" alt="Español" width="30" height="20">
+    </a>
+    <a href="#" onclick="changeLanguage('en')">
+      <img src="assets/img/flag_uk.png" alt="English" width="30" height="20">
+    </a>
+  </div>
+
+
+<!-- JavaScript para el filtro -->
+<script>
+  document.getElementById('categoryFilter').addEventListener('change', function() {
+    var selectedCategory = this.value.toLowerCase();
+    var cards = document.querySelectorAll('.col-md-6.col-lg-4');
+
+    cards.forEach(function(card) {
+      var category = card.querySelector('.post-category').textContent.toLowerCase();
+      if (selectedCategory === 'all' || category === selectedCategory) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</body>
+
+
+
+</html>
